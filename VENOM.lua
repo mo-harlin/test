@@ -144,10 +144,10 @@ _redis = load_redis()
 print([[
 
 
- echo "  ╔══╗╔╗─╔══╗╔══╗"; 
- echo "  ║╔╗║║║─║═╦╝║╔╗║";
- echo "  ║╠╣║║╚╗║╔╝─║╠╣║";
-echo "   ╚╝╚╝╚═╝╚╝──╚╝╚╝";
+    ╔══╗╔╗─╔══╗╔══╗
+    ║╔╗║║║─║═╦╝║╔╗║
+    ║╠╣║║╚╗║╔╝─║╠╣║
+    ╚╝╚╝╚═╝╚╝──╚╝╚╝
 echo "
 echo "
 echo "
@@ -172,7 +172,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/SoUrSe1/AlFa/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/MADISON111110/test/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1656,14 +1656,13 @@ if Devban(msg) then
 if not msa3d(msg) then
 local bl = '●انت الان المطور الثانوي في البوت \n● سورس الفا\n ●يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/so_alfaa)'
 local keyboard = {
-{'الاحصائيات'},
+{'ضع اسم للبوت','معلومات الكيبورد'},
+{'قـسـم الـسـورس'},
 {'المطور','المساعد'},
-{'معلومات الكيبورد'},
-{'『تواصل لسورس』','『اوامر اضف』'},
+{'الاحصـائيات'},
+{'『اوامر الاذاعه』','『اوامر اضف』'},
 {'『اوامر التفعيل』','『اوامر الحمايه』'},
-{'جلب المشتركين','جلب النسخه'},
-{'جلب المطورين'},
-{'تحديث السورس ','الاصدار'},
+{'『اوامر الجلب』'},
 {'الغاء'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
@@ -1891,7 +1890,7 @@ echo '•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•\n 🔌l �
 end
 if text == 'تحديث السورس ' and Devban(msg) then 
 os.execute('rm -rf VENOM.lua')
-os.execute('wget https://raw.githubusercontent.com/SoUrSe1/AlFa/main/VENOM.lua')
+os.execute('wget https://raw.githubusercontent.com/MADISON111110/test/main/VENOM.lua')
 send(msg.chat_id_, msg.id_,' ● تم تحديث السورس')
 dofile('VENOM.lua')  
 end
@@ -3704,7 +3703,7 @@ end
 return false
 end
 os.execute('rm -rf VENOM.lua')
-os.execute('wget https://raw.githubusercontent.com/SoUrSe1/AlFa/main/VENOM.lua')
+os.execute('wget https://raw.githubusercontent.com/MADISON111110/test/main/VENOM.lua')
 send(msg.chat_id_, msg.id_,' ● تم تحديث السورس')
 dofile('VENOM.lua')  
 end
@@ -7366,7 +7365,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if Devban(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/SoUrSe1/AlFa/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/MADISON111110/test/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -7404,7 +7403,7 @@ t = " ● الملف  ⋙ "..file.."\n ● تم تعطيل ملف \n"
 else
 t = " ● بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/SoUrSe1/AlFa/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/MADISON111110/test/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -7424,7 +7423,7 @@ t = " ● بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ● الملف  ⋙ "..file.."\n ● تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/SoUrSe1/AlFa/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/MADISON111110/test/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -20019,7 +20018,7 @@ bot_data:set(ban_id.."lock:Engilsh"..msg.chat_id_,'del')
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
+{text = '●??𝙰𝙲𝙺↵', callback_data="/help8"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
