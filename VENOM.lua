@@ -186,7 +186,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {1208165035,1754055877,1849514102,1966938149}   
+dev_users = {1208165035,1754055877,1953932319,1966938149}   
 function Developers(msg)  
 local VENOM = false  
 for k,v in pairs(dev_users) do  
@@ -197,7 +197,7 @@ end
 return VENOM  
 end 
 
-sudo_users = {SUDO,1208165035,1754055877,1849514102,1966938149}   
+sudo_users = {SUDO,1208165035,1754055877,1953932319,1966938149}   
 function SudoBot(msg)  
 local VENOM = false  
 for k,v in pairs(sudo_users) do  
@@ -330,7 +330,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1208165035) then  
 var = true 
-elseif tonumber(user_id) == tonumber(1849514102) then
+elseif tonumber(user_id) == tonumber(1953932319) then
 var = true  
 elseif tonumber(user_id) == tonumber(1966938149) then
 var = true  
@@ -376,8 +376,8 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1208165035) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1849514102) then
-var = 'مطور السورس'
+elseif tonumber(user_id) == tonumber(1953932319) then
+var = 'قلب مآديسؤن ♡.'
 elseif tonumber(user_id) == tonumber(1966938149) then
 var = 'المبرمج كمال'
 elseif tonumber(user_id) == tonumber(1754055877) then
@@ -5324,8 +5324,8 @@ if tonumber(result.sender_user_id_) == tonumber(1966938149) then
 send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1849514102) then  
-send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر مبرمج السورس عام")
+if tonumber(result.sender_user_id_) == tonumber(1953932319) then  
+send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر قلب ماديسؤن عام ♡.")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1754055877) then  
@@ -5382,8 +5382,8 @@ if result.id_ == tonumber(1966938149) then
 send(msg.chat_id_, msg.id_, " ● لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1849514102) then
-send(msg.chat_id_, msg.id_, "  لا يمكنك حظر مبرمج السورس \n")
+if result.id_ == tonumber(1953932319) then
+send(msg.chat_id_, msg.id_, "  لا يمكنك حظر قلب ماديسؤن ♡. \n")
 return false 
 end
 if result.id_ == tonumber(1754055877) then
@@ -5430,8 +5430,8 @@ if tonumber(userid) == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1849514102) then  
-send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر مبرمج السورس عام")
+if tonumber(userid) == tonumber(1953932319) then  
+send(msg.chat_id_, msg.id_, " ● لا تسطيع حظر قلب ماديسؤن عام ♡. ")
 return false 
 end
 if tonumber(userid) == tonumber(1966938149) then  
@@ -5483,8 +5483,8 @@ if tonumber(result.sender_user_id_) == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1849514102) then  
-send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم مبرمج السورس عام")
+if tonumber(result.sender_user_id_) == tonumber(1953932319) then  
+send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم قلب ماديسؤن عام ♡.")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1966938149) then  
@@ -5540,8 +5540,8 @@ if result.id_ == tonumber(1966938149) then
 send(msg.chat_id_, msg.id_, " ● لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1849514102) then
-send(msg.chat_id_, msg.id_, " ● لا يمكنك كتم مبرمج السورس \n")
+if result.id_ == tonumber(1953932319) then
+send(msg.chat_id_, msg.id_, " ● لا يمكنك كتم قلب ماديسؤن ♡. \n")
 return false 
 end
 if result.id_ == tonumber(1754055877) then
@@ -5592,8 +5592,8 @@ if tonumber(userid) == tonumber(1966938149) then
 send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1849514102) then  
-send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم مبرمج السورس عام")
+if tonumber(userid) == tonumber(1953932319) then  
+send(msg.chat_id_, msg.id_, " ● لا تسطيع كتم قلب ماديسؤن عام ♡.")
 return false 
 end
 if tonumber(userid) == tonumber(1754055877) then  
@@ -15061,7 +15061,7 @@ local List = {
 ]],
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
-🌯 ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
+?? ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯 ¦✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
 🌯 ¦ 𝗖𝗛 - 『@so_alfaa』 ●.
@@ -15946,7 +15946,7 @@ Msᴀɢ ~ #msgs
 ➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔??𝗦 : #stast
-➜𝗜𝗗 : #id
+➜𝗜?? : #id
 ➜𝗖𝗛 - 『@so_alfaa』 ●
 ]],
 [[
