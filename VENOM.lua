@@ -21458,18 +21458,18 @@ send(msg.chat_id_, msg.id_,'['..LEADER_Msg[math.random(#LEADER_Msg)]..']')
 return false
 end
 end
-if text == 'ننينينيهثنا9 3' or text == 'فنةهةثظلظل' then  
+if text == 'قلب ماديسون' or text == 'رزان' then  
 local Text = [[  
-للتواصل مع المطور منجي 📊📮.
+للتواصل مع رزان قلب ماديسون 📊📮.
 اتبع الازرار الاتيه 📊. 
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '𝐃𝐞𝐯 𝐌𝐨𝐧𝐠𝐲 ✰.',url="t.me/EX_2005"}},  
+{{text = '𝐑𝐚𝐳𝐚𝐧 𝐀𝐥𝐛 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ✰.',url="t.me/XR_A_Z"}},  
 
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/EX_2005&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XR_A_Z&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'شيكو' or text == 'المبرمج شيكو' then  
 local Text = [[  
